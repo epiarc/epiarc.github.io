@@ -1,0 +1,154 @@
+@import 'variables';
+
+html, body {
+	font-size: 21px;
+}
+
+body {
+	color: $black;
+	text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+	color: $epiarc-foundation-red-1;
+}
+
+a:focus,
+a:hover {
+	color: $epiarc-foundation-red-1;
+	text-decoration: none;
+	padding-bottom: 0.1em;
+	border-bottom: 1px solid $epiarc-foundation-red-1;
+}
+
+.logo-container {
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.call-to-action {
+	margin-top: 1rem;
+}
+
+.btn-outline-primary {
+	color: $epiarc-foundation-red-1;
+	border-color: $epiarc-foundation-red-1;
+	font-variant: small-caps;
+	letter-spacing: 0.1em;
+	line-height: 1em;
+	width: 100%;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary:hover {
+	background-color: transparent;
+	color: $epiarc-foundation-red-1;
+	border-color: $epiarc-foundation-red-1;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.footer {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+	.logo-container {
+		text-align: left;	
+	}
+	
+	.btn-outline-primary {
+		width: auto;
+	}
+}
+
+@media (min-width: 576px) {
+	.hero-epiarc-icon-container {
+		margin-top: 10rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.hero-epiarc-icon-container {
+		margin-top: 6rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.hero-epiarc-icon-container {
+		margin-top: 1rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.hero-epiarc-icon-container {
+		margin-top: 0;
+	}
+}
+
+.hero-epiarc-icon-container svg {
+	width: 100%;
+	height: auto;
+	
+	.circle-1,
+	.st3,
+	.circle-2,
+	.st0,
+	.circle-3,
+	.st1,
+	.circle-4 {
+		animation-name: red;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+	}
+	
+	.path-1 {
+		animation-delay: 2s;
+	}
+	
+	.path-2 {
+		animation-delay: 4s;
+	}
+	
+	.path-3 {
+		animation-delay: 6s;
+	}
+	
+	.path-4 {
+		animation-delay: 8s;
+	}
+	
+	.path-5 {
+		animation-delay: 10s;
+	}
+	
+	.path-6 {
+		animation-delay: 12s;
+	}
+	
+	.path-7 {
+		animation-delay: 14s;
+	}
+}
+
+.twitter-link-container {
+	display: inline-block;
+	margin-left: 0.5rem;
+}
+
+@keyframes red {
+	0% {
+		stroke: $black;
+	}
+	
+	50% {
+		stroke: $epiarc-foundation-red-1;
+	}
+	
+	100% {
+		stroke: $black;
+	}
+}
